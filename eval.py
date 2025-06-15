@@ -1,5 +1,3 @@
-#!/usr/bin/env python
-
 import numpy as np
 import pandas as pd
 from teamName import getMyPosition as getPosition
@@ -15,7 +13,7 @@ def loadPrices(fn):
     (nt,nInst) = df.shape
     return (df.values).T
 
-pricesFile="./priceSlice_test.txt"
+pricesFile="./prices.txt"
 prcAll = loadPrices(pricesFile)
 print ("Loaded %d instruments for %d days" % (nInst, nt))
 
